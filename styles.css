@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+}
+:root{
+    --clr-background-primary: rgb(92, 41, 72);
+    --clr-background-secondary: rgb(35, 90, 149);
+    --clr-primary: rgb(238, 0, 60);
+    --clr-secondary: rgb(0, 89, 255);
+    --clr-text: rgb(234, 229, 229);
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    background: linear-gradient(45deg , var(--clr-background-primary) , var(--clr-background-secondary) ,var(--clr-background-primary));
+}
+.header{
+    width: 100%;
+    margin-left: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--clr-text);
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 70%;
+    height: 30rem;
+    padding: 1rem 0;
+    margin-top: 4rem;
+    border: 3px solid var(--clr-primary);
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.arrow{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(240, 248, 255, 0.1);
+    transition: all .3s;
+}
+.arrow:hover{
+    background-color: rgba(240, 248, 255, 0.2);
+    cursor: pointer;
+}
+.arrow__left{
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+.arrow__right{
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.photo{
+    width: 80%;
+    height: 100%;
+}
+.photo__album{
+    width: 100%;
+    height: 90%;
+    border-radius: 1rem;
+}
+.dots{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1rem;
+    border-radius: 100%;
+    background-color: rgba(240, 248, 255, 0.1);
+}
+.dot:hover{
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.2);
+}
+.container{
+    max-width: 1536px;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+}
+/* XXL */
+@media (max-width:1536px){
+    .container{
+        max-width: 1280px;
+    }
+}
+/* XL */
+@media (max-width:1280px){
+    .container{
+        max-width: 1024px;
+    }
+}
+/* L */
+@media (max-width:1024px){
+    .container{
+        max-width: 768px;
+    }
+}
+/* M  */
+@media (max-width:768px){
+    .container{
+        max-width: 640px;
+    }
+}
+/* S  */
+@media (max-width:640px){
+    .container{
+        max-width: 475px;
+    }
+}
+/* XS */
+@media (max-width:475px){
+    .container{
+        width: 100%;
+    }
+}
