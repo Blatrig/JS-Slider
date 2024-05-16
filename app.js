@@ -8,7 +8,6 @@ let dot3 = document.querySelector('#dot3');
 let photo1 = document.querySelector('#photo1');
 let photo2 = document.querySelector('#photo2');
 let photo3 = document.querySelector('#photo3');
-console.log(dot2)
 
 photo1.classList.add('active');
 
@@ -75,4 +74,18 @@ dot3.addEventListener('click', showPhoto3);
 
 arrowRight.addEventListener('click',showNextPhoto );
 arrowLeft.addEventListener('click',showPreviousPhoto);
+
+let mDot = document.querySelector('#main__dot');
+let body = document.querySelector('body');
+let timer = 1;
+let altBackground = () =>{
+    if(timer === 1){
+        body.classList.replace('background','alt__background');
+        timer = 2;
+    }else{
+        body.classList.replace('alt__background','background');
+        timer = 1;
+    };
+};
+mDot.addEventListener('click',altBackground);
 

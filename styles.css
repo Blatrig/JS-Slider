@@ -21,7 +21,12 @@
 body{
     width: 100dvw;
     height: 100dvh;
+}
+.background{
     background: linear-gradient(45deg , var(--clr-background-primary) , var(--clr-background-secondary) ,var(--clr-background-primary));
+}
+.alt__background{
+    background: linear-gradient(45deg , var(--clr-background-secondary) , var(--clr-background-primary) ,var(--clr-background-secondary));
 }
 .header{
     width: 100%;
